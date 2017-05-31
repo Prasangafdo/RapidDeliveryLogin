@@ -1,3 +1,10 @@
+<?php
+include('login.php'); // Includes Login Script
+
+if(isset($_SESSION['login_user'])){
+header("location: profile.php");
+}
+?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -20,10 +27,13 @@
 		</div>
 		<br>
 		<div class="login">
-				<input type="text" placeholder="username" name="user"><br>
-				<input type="password" placeholder="password" name="password"><br>
-				<input type="button" value="Login">
+        <form action="login.php" method="post">
+        		<input id="username" name="username" placeholder="username" type="text"><br>
+				<input id="password" name="password" placeholder="**********" type="password"><br>
+				<input name="submit" type="submit" value="Login">
+				</form>
 		</div>
+
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   
