@@ -36,6 +36,7 @@ mysql_close($connection); // Closing Connection
 */
 
 require "connect.php";
+require "nav.html";
 
 /*$user_name = "usr";
 $user_pass = "pss";
@@ -47,7 +48,9 @@ $mysql_query = "select * from login where username like '$user_name' and passwor
 
 $result = mysqli_query($con, $mysql_query);
 if(mysqli_num_rows($result) >0){
-echo "login success!";
+
+echo "	<h1>
+login success! </h1>";
 }
 else 
 echo "login failed...";
