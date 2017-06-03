@@ -26,6 +26,11 @@
 
 </head>
 
+<?php
+$username = $_POST["username"];
+
+?>
+
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -62,7 +67,8 @@
                 </ul>
                 <ul>
                 <div class="userName">
-                	<h3> Prasanga </h3> 
+                	<?php echo "<h3> $username </h3>";
+					?> 
             </div>
             </ul>
             <!-- /.navbar-collapse -->
@@ -75,8 +81,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                    <h1>Welcome to Rapid Delivery</h1>
+                    <p>&nbsp;</p>
                     <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
                 </div>
             </div>
