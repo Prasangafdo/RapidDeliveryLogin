@@ -80,7 +80,7 @@ $username = $_POST["username"];
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="welcomePane">
                     <h1>Welcome to Rapid Delivery</h1>
                     <p>&nbsp;</p>
                     <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>

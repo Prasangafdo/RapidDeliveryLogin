@@ -65,3 +65,7 @@ of those sections to manage the look and feel of the site. */
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;*/
 }
+.welcomePane{
+	background-image:url(../images/Delivery_2_3.jpg);
+}
+	
