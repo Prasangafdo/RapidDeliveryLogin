@@ -28,12 +28,14 @@ header("location: profile.php");
 		<br>
 		<div class="login">
         <form action="login.php" method="post">
-        		<select name="car">
-  <option  value="volvo">Volvo</option>
-  <option Value="saab">Saab</option>
-  <option value="opel">Opel</option>
-  <option value="audi">Audi</option>
-</select>
+        		<select name="UserRole"> 
+                      <option value="Admin">Admin</option>
+                      <option Value="Courier">Courier</option>
+                      <option value="customer">customer</option>
+                      <option value="Staff">Staff</option>
+               </select>
+               
+<br/>
 <br/>
         		<input id="username" name="username" placeholder="username" type="text"><br>
 				<input id="password" name="password" placeholder="**********" type="password"><br>

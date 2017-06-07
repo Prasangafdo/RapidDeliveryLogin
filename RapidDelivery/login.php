@@ -41,7 +41,7 @@ require "nav.php";
 /*$user_name = "usr";
 $user_pass = "pss";
 */
-$car = $_POST["car"];
+$userRole = $_POST["UserRole"];
 $user_name = $_POST["username"];
 $user_pass = $_POST["password"];
 
@@ -51,7 +51,7 @@ $result = mysqli_query($con, $mysql_query);
 if(mysqli_num_rows($result) >0){
 
 echo "	<h1>
-login success! <br/> </h1> $car" ;
+login success! <br/> </h1> $userRole" ;
 
 }
 else 

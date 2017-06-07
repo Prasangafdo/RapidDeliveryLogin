@@ -1,5 +1,5 @@
 <?php
-$db_name = "company";
+$db_name = "RapidDelivery";
 $mysql_username = "root";
 $mysql_password = "";
 $server_name = "localhost";
