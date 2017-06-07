@@ -14,7 +14,8 @@ html {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
-		background:#1CC139;
+		background:rgba(210,191,125,0.23);
+		
     }
 
     .top-nav-collapse {
