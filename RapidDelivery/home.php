@@ -19,10 +19,6 @@
 
 </head>
 
-<?php
-$username = $_POST["username"];
-
-?>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
@@ -61,8 +57,11 @@ $username = $_POST["username"];
                 <ul>
                 <div class="userName">
                 
-                	<?php echo "<h3> $username </h3>";
-					?> 
+					<?php
+                    include('session.php');
+                    echo "<h3> $login_session </h3>";
+                    ?>
+
                     
                     <form action="logout.php" method="post">
                     <div class="logout">

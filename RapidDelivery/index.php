@@ -1,9 +1,9 @@
 <?php
-/*include('login.php'); // Includes Login Script
+include('login.php'); // Includes Login Script
 
 if(isset($_SESSION['login_user'])){
-header("location: profile.php");
-}*/
+header("location: home.php");
+}
 ?>
 <!DOCTYPE html>
 <html >
@@ -27,7 +27,7 @@ header("location: profile.php");
 		</div>
 		<br>
 		<div class="login">
-        <form action="login.php" method="post">
+        <form action="" method="post">
         		<select name="UserRole"> 
                       <option value="Admin">Admin</option>
                       <option Value="Courier">Courier</option>
@@ -40,6 +40,8 @@ header("location: profile.php");
         		<input id="username" name="username" placeholder="username" type="text"><br>
 				<input id="password" name="password" placeholder="**********" type="password"><br>
 				<input name="submit" type="submit" value="Login">
+                <br/>
+                <span class="credentials_failed"><?php echo $error; ?></span>
 				</form>
 		</div>
 
