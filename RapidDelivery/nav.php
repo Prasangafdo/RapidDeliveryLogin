@@ -17,13 +17,6 @@
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <?php
@@ -51,7 +44,7 @@ $username = $_POST["username"];
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
@@ -67,8 +60,14 @@ $username = $_POST["username"];
                 </ul>
                 <ul>
                 <div class="userName">
+                
                 	<?php echo "<h3> $username </h3>";
 					?> 
+                    
+                    <form action="logout.php" method="post">
+                    <div class="logout">
+                    <input name="btn_logout" type="submit" value="Logout">
+				</form>
             </div>
             </ul>
             <!-- /.navbar-collapse -->
